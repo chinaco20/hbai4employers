@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Variances</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>HBAI</strong> for Employers</a>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Penny Variances</h1>
+									</header>
+									<p>
+										Penny variances occur when an over simplified <em>spreadsheet</em> tries to emulate a <em>payroll system</em>. Before
+										2019 our <em>spreadsheet</em> aggregated hours accross an entire apprentice class then applied the fund rate. A
+										<em>payroll system</em> will asses the liability to each member first and then aggregate the individual amounts. Agreggating hours <em>before</em> applying the rate allows for lost rounding events. The penny variances
+										conditions are very specific:
+										<ol>
+											<li>The fund rate is an odd number.</li>
+											<li>At least 2 members in the same classification have partial hours of 1/2 hour or more.</li>	
+										</ol>
+										Under these conditions, for every 2 members there will be one lost rounding event equivalent to one penny. I
+										know the penny seems petty (it is), but we do not have an accounting bucket to take that penny from. Every penny
+										is accounted for in our system, and besides, it is satisfying to balance to the penny. Since 2019, all of the
+										spreadsheet forms except for the _g layout avoid the penny variances. If you are seeing these variances and would
+										like for them to stop please switch to a current spreadsheet form.
+									</p>
+									<hr class="major" />
+									<h3>2 rounding events - rate is odd</h3>
+										<table>
+											<thead>
+												<th></th>
+												<th>Rate</th>
+												<th>Hours</th>
+												<th>Spreadsheet method</th>
+												<th>Payroll method</th>
+											</thead>
+											<tr>
+												<td>member 1</td>
+												<td>$1.77</td>
+												<td>1.5</td>
+												<td>$2.655</td>
+												<td>$2.66</td>
+											</tr>
+											<tr>
+												<td>member 2</td>
+												<td>$1.77</td>
+												<td>1.5</td>
+												<td>$2.655</td>
+												<td>$2.66</td>
+											</tr>
+											<tfoot>
+												<td>Total</td>
+												<td></td>
+												<td></td>
+												<td>$5.31</td>
+												<td>$5.32</td>
+											</tfoot>
+
+										</table>
+									<h3>3 rounding events - rate is odd</h3>
+										<table>
+											<thead>
+												<th></th>
+												<th>Rate</th>
+												<th>Hours</th>
+												<th>Spreadsheet method</th>
+												<th>Payroll method</th>
+											</thead>
+											<tr>
+												<td>member 1</td>
+												<td>$1.77</td>
+												<td>1.5</td>
+												<td>$2.655</td>
+												<td>$2.66</td>
+											</tr>
+											<tr>
+												<td>member 2</td>
+												<td>$1.77</td>
+												<td>1.5</td>
+												<td>$2.655</td>
+												<td>$2.66</td>
+											</tr>
+											<tr>
+												<td>member 3</td>
+												<td>$1.77</td>
+												<td>1.5</td>
+												<td>$2.655</td>
+												<td>$2.66</td>
+											</tr>
+											<tfoot>
+												<td>Total</td>
+												<td></td>
+												<td></td>
+												<td>$7.97</td>
+												<td>$7.98</td>
+											</tfoot>
+
+										</table>
+									<h3>4 rounding events - rate is odd</h3>
+										<table>
+											<thead>
+												<th></th>
+												<th>Rate</th>
+												<th>Hours</th>
+												<th>Spreadsheet method</th>
+												<th>Payroll method</th>
+											</thead>
+											<tr>
+												<td>member 1</td>
+												<td>$1.77</td>
+												<td>1.5</td>
+												<td>$2.655</td>
+												<td>$2.66</td>
+											</tr>
+											<tr>
+												<td>member 2</td>
+												<td>$1.77</td>
+												<td>1.5</td>
+												<td>$2.655</td>
+												<td>$2.66</td>
+											</tr>
+											<tr>
+												<td>member 3</td>
+												<td>$1.77</td>
+												<td>1.5</td>
+												<td>$2.655</td>
+												<td>$2.66</td>
+											</tr>
+											<tr>
+												<td>member 4</td>
+												<td>$1.77</td>
+												<td>1.5</td>
+												<td>$2.655</td>
+												<td>$2.66</td>
+											</tr>
+											<tfoot>
+												<td>Total</td>
+												<td></td>
+												<td></td>
+												<td>$10.62</td>
+												<td>$10.64</td>
+											</tfoot>
+										</table>
+
+									<h3>2 rounding events - rate is even</h3>
+									<table>
+										<thead>
+											<th></th>
+											<th>Rate</th>
+											<th>Hours</th>
+											<th>Spreadsheet method</th>
+											<th>Payroll method</th>
+										</thead>
+										<tr>
+											<td>member 1</td>
+											<td>$1.76</td>
+											<td>1.5</td>
+											<td>$2.640</td>
+											<td>$2.640</td>
+										</tr>
+										<tr>
+											<td>member 2</td>
+											<td>$1.76</td>
+											<td>1.5</td>
+											<td>$2.640</td>
+											<td>$2.640</td>
+										</tr>
+										<tfoot>
+											<td>Total</td>
+											<td></td>
+											<td></td>
+											<td>$5.28</td>
+											<td>$5.28</td>
+										</tfoot>
+
+									</table>
+									<p>Do i need to show more examples of even rate rounding events?</p>
+									<!-- <h3>3 rounding events - rate is even</h3>
+									<table>
+										<thead>
+											<th></th>
+											<th>Rate</th>
+											<th>Hours</th>
+											<th>Spreadsheet method</th>
+											<th>Payroll method</th>
+										</thead>
+										<tr>
+											<td>member 1</td>
+											<td>$1.76</td>
+											<td>1.5</td>
+											<td>$2.640</td>
+											<td>$2.640</td>
+										</tr>
+										<tr>
+											<td>member 2</td>
+											<td>$1.76</td>
+											<td>1.5</td>
+											<td>$2.640</td>
+											<td>$2.640</td>
+										</tr>
+										<tr>
+											<td>member 3</td>
+											<td>$1.76</td>
+											<td>1.5</td>
+											<td>$2.640</td>
+											<td>$2.640</td>
+										</tr>
+										<tfoot>
+											<td>Total</td>
+											<td></td>
+											<td></td>
+											<td>$7.92</td>
+											<td>$7.92/td>
+										</tfoot>
+
+									</table>
+									<h3>4 rounding events - rate is even</h3>
+									<table>
+										<thead>
+											<th></th>
+											<th>Rate</th>
+											<th>Hours</th>
+											<th>Spreadsheet method</th>
+											<th>Payroll method</th>
+										</thead>
+										<tr>
+											<td>member 1</td>
+											<td>$1.76</td>
+											<td>1.5</td>
+											<td>$2.640</td>
+											<td>$2.640</td>
+										</tr>
+										<tr>
+											<td>member 2</td>
+											<td>$1.76</td>
+											<td>1.5</td>
+											<td>$2.640</td>
+											<td>$2.640</td>
+										</tr>
+										<tr>
+											<td>member 3</td>
+											<td>$1.76</td>
+											<td>1.5</td>
+											<td>$2.640</td>
+											<td>$2.640</td>
+										</tr>
+										<tr>
+											<td>member 4</td>
+											<td>$1.76</td>
+											<td>1.5</td>
+											<td>$2.640</td>
+											<td>$2.640</td>
+										</tr>
+										<tfoot>
+											<td>Total</td>
+											<td></td>
+											<td></td>
+											<td>$10.56</td>
+											<td>$10.56</td>
+										</tfoot>
+ -->
+									</table>
+								</section>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="generic.html">Generic</a></li>
+										<li><a href="elements.html">Elements</a></li>
+										<li>
+											<span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Etiam Dolore</a></li>
+										<li><a href="#">Adipiscing</a></li>
+										<li>
+											<span class="opener">Another Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Maximus Erat</a></li>
+										<li><a href="#">Sapien Mauris</a></li>
+										<li><a href="#">Amet Lacinia</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Ante interdum</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button">More</a></li>
+									</ul>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+										<li class="icon solid fa-phone">(000) 000-0000</li>
+										<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+										Nashville, TN 00000-0000</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
